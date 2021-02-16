@@ -12,6 +12,9 @@ const Layout = (props: any) => {
         <main>
             { props.children }
         </main>
+        <div className="w3-container w3-red">
+          <h5>copyright@DCSInfoway2021</h5>
+        </div>      
     </div>
   );
 }

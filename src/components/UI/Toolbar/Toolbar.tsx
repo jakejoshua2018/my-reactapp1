@@ -8,7 +8,7 @@ const Toolbar = (props: any) => {
   return (
     <Navbar bg="primary" variant="dark">
         <Nav className="mr-auto">
-            <LinkContainer to='/'>
+            <LinkContainer to='/' exact>
                 <Nav.Link>Home</Nav.Link>
             </LinkContainer>
             <LinkContainer to='/services'>
@@ -16,6 +16,9 @@ const Toolbar = (props: any) => {
             </LinkContainer>
             <LinkContainer to='/about'>
                 <Nav.Link>About</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/product'>
+                <Nav.Link>Products</Nav.Link>
             </LinkContainer>
         </Nav>
     </Navbar>

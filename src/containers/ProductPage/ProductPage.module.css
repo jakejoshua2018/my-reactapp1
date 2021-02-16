@@ -1,0 +1,18 @@
+/**
+ * File: ServicePage.module.css
+ * -----
+ * Created Date: Thursday February 11th 2021
+ * Author: Jerin George
+ * -----
+ * Last Modified: Thu Feb 11 2021
+ * Modified By: Jerin George
+ * @packageDocumentation
+ */
+
+.Form {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid rgb(114, 110, 100);
+    width: 50%;
+    padding: 10px;
+}

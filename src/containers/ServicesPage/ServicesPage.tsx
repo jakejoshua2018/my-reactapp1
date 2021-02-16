@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { produce } from 'immer';
 
-import axios from '../../axios-services';
+import axios from '../../axios';
 import classes from './ServicePage.module.css';
 import Form from '../../components/UI/Form/Form';
 import Table from '../../components/UI/Table/Table';

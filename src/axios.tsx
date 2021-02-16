@@ -3,16 +3,16 @@ import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
 const instance = axios.create( {
 
-    baseURL: 'http://localhost:1337'
+    baseURL: 'http://localhost:4000'
 });
 
-instance.defaults.headers.common['Authorization'] = 'AUTH_TOKEN_PREV';
-instance.defaults.headers.post['Content_Type'] = 'application/json';
+// instance.defaults.headers.common['Authorization'] = 'AUTH_TOKEN_PREV';
+// instance.defaults.headers.post['Content_Type'] = 'application/json';
 
 //Request interceptor
 instance.interceptors.request.use( (request: AxiosRequestConfig) => {
     
-    console.log("Axios Request Interceptor:",request);
+    //console.log("Axios Request Interceptor:",request);
     return request;
 }, error => {
 
@@ -23,7 +23,7 @@ instance.interceptors.request.use( (request: AxiosRequestConfig) => {
 //Response interceptor
 instance.interceptors.response.use( (response: AxiosResponse) => {
 
-    console.log("Axios Response Interceptor:",response);
+    //console.log("Axios Response Interceptor:",response);
     return response;
 }, error => {
 
